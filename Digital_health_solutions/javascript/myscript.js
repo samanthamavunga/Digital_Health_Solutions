@@ -1,4 +1,4 @@
-/* slide show */
+/* slide show 
 // Select UI elements or inputs
 
 const form = document.getElementById('form');
@@ -9,8 +9,23 @@ const dname = document.getElementById('dob');
 const loc = document.getElementById('loc');
 const pnum = document.getElementById('pnum');
 const subs = document.getElementById('subs');
-const psw = document.getElementById('psw');
+const psw= document.getElementById('psw');
 const psw2 = document.getElementById('psw2');
+*/
+
+function validateform(){  
+  var fname=document.myform.fname.value;  
+  var password=document.myform.password.value;  
+    
+  if (fname==null || fname==" "){  
+    alert("Name can't be blank");  
+    return false;  
+  }else if(psw.length<6){  
+    alert("Password must be at least 6 characters long.");  
+    return false;  
+    }  
+  }  
+/*
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -138,3 +153,4 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 8000); // Change image every 8 seconds
 }
+*/
